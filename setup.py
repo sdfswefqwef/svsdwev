@@ -8,7 +8,7 @@ setup(
     description='Scene Text Recognition Model Hub: A collection of deep learning models for Scene Text Recognition',
     author='Darwin Bautista',
     author_email='baudm@users.noreply.github.com',
-    url='https://github.com/baudm/parseq',
+    url='https://github.com/sdfswefqwef/svsdwev',
     install_requires=['pytorch-lightning~=1.6.5', 'timm~=0.6.5'],
     packages=find_packages(),
 )
