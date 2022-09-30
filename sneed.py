@@ -39,12 +39,9 @@ from strhub.models.utils import load_from_checkpoint, parse_model_args
 # parseq = torch.hub.load('baudm/parseq', 'trba', pretrained=True).eval()
 # from strhub.models.crnn.system import CRNN as ModelClass
 # from strhub.models.parseq.system import PARSeq as ModelClass
-# parseq = ModelClass.load_from_checkpoint("outputs/parseq-tiny/2022-09-27_10-13-38/checkpoints/last.ckpt").eval()
+# parseq = ModelClass.load_from_checkpoint("outputs/crnn/2022-09-28_21-25-02/checkpoints/last.ckpt").eval()
 
 # torch.save(parseq, 'tensor.pt')
-
-
-
 parseq = torch.load('tensor.pt', map_location=torch.device('cpu')).eval()
 
 img_transform = SceneTextDataModule.get_transform(parseq.hparams.img_size)
